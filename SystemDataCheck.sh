@@ -7,5 +7,5 @@ echo "Checking normal areas (VSTs, Steam, Epic Games, etc). If you see a problem
 du -sh /Users/Shared
 du -sh /Library/Audio/* 2>&1 | grep -v 'Operation not permitted' | grep -v 'Permission denied' | grep "G	"
 du -sh /Users/`id -un`/* 2>&1 | grep -v 'Operation not permitted' | grep -v 'Permission denied' | grep "G	"
-du -sh /Users/`id -un`/Library/Application\ Support/* 2>&1 | grep -v 'Operation not permitted' | grep -v 'Permission denied' | grep "G"
+du -sh /Users/`id -un`/Library/Application\ Support/* 2>&1 | grep -v 'Operation not permitted' | grep -v 'Permission denied' | grep "G	"
 echo "That's it! Hopefully this helps"
